@@ -10,8 +10,8 @@
 	let structuredData = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfilePage',
-		dateCreated: new Date('8-6-2024').toISOString(),
-		dateModified: new Date('8-6-2024').toISOString(),
+		dateCreated: new Date('2024-08-06').toISOString(),
+		dateModified: new Date('2024-08-06').toISOString(),
 		mainEntity: {
 			'@type': 'Person',
 			name: 'Ali Alaa',
