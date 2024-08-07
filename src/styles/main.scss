@@ -170,12 +170,12 @@ a {
 }
 
 .content-wrapper {
-	max-width: var(--content-width);
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
 	position: relative;
-	@include breakpoint.up('md') {
+	@include breakpoint.up('lg') {
+		max-width: var(--content-width);
 		padding: 0 30px;
 	}
 }
