@@ -16,11 +16,16 @@
 
 	NProgress.configure({ showSpinner: false });
 
+	let loadingTimeout: NodeJS.Timeout;
+
 	beforeNavigate(() => {
-		NProgress.start();
+		loadingTimeout = setTimeout(() => {
+			NProgress.start();
+		}, 500);
 	});
 
 	afterNavigate(() => {
+		clearTimeout(loadingTimeout);
 		NProgress.done();
 	});
 
@@ -36,11 +41,6 @@
 			});
 		});
 	});
-
-	let hasError = false;
-	let hasSuccess = false;
-	// let hasError = $derived($page.url.searchParams.get('error'));
-	// let hasSuccess = $derived($page.url.searchParams.get('success'));
 
 	let { children } = $props();
 	let reducedMotionSystem: boolean | null = $state(null);
@@ -104,15 +104,6 @@
 </svelte:head>
 
 <a class="skip-link" href="#main">Skip to Content</a>
-
-{#if hasError || hasSuccess}
-	<div class="message" role="status" class:error={hasError} class:success={hasSuccess}>
-		{hasError ?? hasSuccess}
-		<a href={$page.url.pathname} class="close">
-			<X aria-hidden focusable="false" /> <span class="visually-hidden">Close message</span>
-		</a>
-	</div>
-{/if}
 
 <Waves data-route={$page.route.id}>
 	<Header />
