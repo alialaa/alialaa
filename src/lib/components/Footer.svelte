@@ -94,7 +94,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://bsky.app/profile/alialaa.bsky.social">
+							<a href="https://bsky.app/profile/alialaa.dev">
 								<SocialIcon class="bsky" platform="Bluesky" focusable="false" aria-hidden="true" />
 								<span>
 									<span class="visually-hidden">Follow me on </span>Bluesky
