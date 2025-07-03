@@ -1,88 +1,112 @@
 WEBVTT
 
-00:04.990 --> 00:08.530
-Welcome to the Complete Guide to svelte and Svelte KITT.
+00:00.320 --> 00:03.320
+Welcome to The Complete Guide to Svelte and Sveltekit.
 
-00:08.890 --> 00:14.740
-In this course, we are going to learn everything about building web components with svelte and high
+00:03.440 --> 00:09.120
+In this course, we are going to explore everything from building reactive UI components with svelte
 
-00:14.740 --> 00:18.070
-performance web applications with svelte kit.
+00:09.160 --> 00:13.640
+to creating full stack, high performance web applications with Sveltekit.
 
-00:19.120 --> 00:20.080
-My name is Ali.
+00:21.200 --> 00:27.880
+My name is Ali and I've been working as a web developer for years, creating both web and mobile applications
 
-00:20.110 --> 00:25.960
-I have been working as a front end web developer for years, creating web and mobile applications and
+00:28.280 --> 00:35.280
+and sharing my knowledge through online courses that have received thousands of positive reviews over
 
-00:25.960 --> 00:32.230
-also publishing online educational content that has received thousands of positive reviews.
+00:35.280 --> 00:35.640
+the years.
 
-00:33.610 --> 00:39.940
-At the end of this course, you will be able to build Web components using svelte and using svelte kit.
+00:35.640 --> 00:41.920
+I have tried many libraries and frameworks, but when I discovered svelte, it instantly became one
 
-00:39.970 --> 00:46.720
-You will be able to build high performance server side rendered web applications that can be fully functional
+00:41.920 --> 00:42.960
+of my favorites.
 
-00:46.720 --> 00:49.270
-even without having JavaScript enabled.
+00:43.360 --> 00:48.040
+I truly enjoy working with it and even built my personal website with it.
 
-00:50.470 --> 00:55.090
-The first nine sections in this course is dedicated to discussing svelte.
+00:48.920 --> 00:53.120
+I created this course to share everything I've learned about Svelte and Sveltekit.
 
-00:55.360 --> 00:58.840
+00:53.800 --> 01:01.400
+By the end, you will be able to build reusable reactive components with svelte and build fast, SEO
+
+01:01.400 --> 01:04.640
+friendly full stack web applications with Sveltekit.
+
+01:05.280 --> 01:07.630
+This course is divided into two parts.
+
+01:08.470 --> 01:12.190
+The first eight sections in this course are dedicated to svelte.
+
+01:12.310 --> 01:15.390
 We are going to discuss everything about svelte from scratch.
 
-00:59.080 --> 01:05.710
-We will start by creating simple components and then we are going to gradually progress into more complex
+01:15.790 --> 01:22.430
+We will discuss signal based reactivity, which is the way svelte uses in order to efficiently update
 
-01:05.710 --> 01:08.200
-components and more advanced topics.
+01:22.470 --> 01:23.870
+certain parts of the Dom.
 
-01:09.130 --> 01:13.000
-The next seven sections will be dedicated to Svelte Kit.
+01:24.350 --> 01:27.390
+And then we will start by creating simple components.
 
-01:13.480 --> 01:20.170
-We are going to discuss everything about svelte kit from how to create pages, layouts, how to load
+01:27.590 --> 01:33.990
+And then we are going to gradually progress into more complex components and more advanced topics like
 
-01:20.170 --> 01:26.650
-data on the server and on the client, how to handle errors, how to use environment variables, how
+01:33.990 --> 01:41.150
+deep state reactivity, universal reactivity, the context API, animations, transitions, and more.
 
-01:26.650 --> 01:33.580
-to post data to your server in a progressively enhanced way, how to deploy your app and more topics
+01:42.430 --> 01:45.230
+The remaining sections are all about sveltekit.
 
-01:33.580 --> 01:39.730
-that will eventually allow you to build a high performance server side rendered app that can work without
+01:45.790 --> 01:52.790
+While svelte helps you build components, Sveltekit lets you build full applications with routing,
 
-01:39.730 --> 01:42.040
-having JavaScript enabled in the browser.
+01:53.110 --> 01:59.470
+server side rendering, and back end capabilities, allowing you to create full stack applications.
 
-01:42.790 --> 01:48.310
-And in the final section, we are going to build an app that is going to bring everything that we've
+02:00.230 --> 02:06.750
+We're going to discuss everything about Sveltekit from how to create pages layouts, how to load data
 
-01:48.310 --> 01:49.360
-learned together.
+02:06.750 --> 02:13.140
+on the server and on the client, how to handle errors, How to submit data to your server in a progressively
 
-01:49.870 --> 01:56.650
-In this final section, we are going to build a mini Spotify clone using svelte and svelte Kit and the
+02:13.140 --> 02:14.020
+enhanced way.
 
-01:56.650 --> 02:03.370
-Spotify API, and you can see a demo of the apps that we are going to be building in the free videos.
+02:14.860 --> 02:21.860
+We will also set up a Postgres database and interact with it with drizzle ORM in order to create a full
 
-02:07.680 --> 02:12.660
-Good JavaScript knowledge is the only requirement that you need in order to take this course.
+02:21.860 --> 02:23.140
+stack application.
 
-02:13.230 --> 02:19.860
-And basic typescript knowledge is also preferable as we are going to be using typescript with svelte
+02:24.060 --> 02:28.060
+In addition to that, we are going to handle authentication and authorization.
 
-02:19.860 --> 02:20.370
-git.
+02:28.660 --> 02:32.700
+And finally deploy our app to different hosting services.
 
-02:21.390 --> 02:22.350
-So join us now.
+02:34.540 --> 02:41.220
+You will gain the skills to build a robust, fast and secure application that work even without JavaScript.
 
-02:22.350 --> 02:27.870
-If you would like to learn this world framework from scratch and build high performance web applications
+02:43.540 --> 02:48.860
+The main requirements for this course is JavaScript and also some TypeScript.
 
-02:27.870 --> 02:29.220
-with wealth kit.
+02:49.220 --> 02:56.460
+However, we will also use PostgreSQL and drizzle ORM in few sections, so basic knowledge of SQL will
+
+02:56.460 --> 02:57.140
+be helpful.
+
+02:57.660 --> 03:03.700
+We will write queries, join tables and stuff like that, but I won't be covering SQL from scratch.
+
+03:06.580 --> 03:12.260
+So if you are excited to learn Svelte and Sveltekit and want to start building high performance modern
+
+03:12.260 --> 03:16.180
+web applications, join us now and I will see you inside the course.
